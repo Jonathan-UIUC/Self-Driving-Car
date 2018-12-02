@@ -1,6 +1,6 @@
 # Self Driven Car
 
-A self driven car with intelligence detecting obstacles and make correct decision based on machine learning.
+A self driven car has intelligence detecting obstacles and making correct decision based on machine learning and other built-in patfinding algorithms.
 
 ## Getting Started
 
