@@ -36,7 +36,7 @@ void setup() {
 void runForward() {
     digitalWrite(MotorLeftDirection1A, HIGH);
     digitalWrite(MotorLeftDirection2A, LOW);
-    analogWrite(MotorLeftSpeed, 145);
+    analogWrite(MotorLeftSpeed, 148);
 
     digitalWrite(MotorRightDirection4A, HIGH);
     digitalWrite(MotorRightDirection3A, LOW);
@@ -46,7 +46,7 @@ void runForward() {
 void runBackward() {
     digitalWrite(MotorLeftDirection1A, LOW);
     digitalWrite(MotorLeftDirection2A, HIGH);
-    analogWrite(MotorLeftSpeed, 145);
+    analogWrite(MotorLeftSpeed, 148);
 
     digitalWrite(MotorRightDirection4A, LOW);
     digitalWrite(MotorRightDirection3A, HIGH);
@@ -56,7 +56,7 @@ void runBackward() {
 void turnRight() {
     digitalWrite(MotorLeftDirection1A, HIGH);
     digitalWrite(MotorLeftDirection2A, LOW);
-    analogWrite(MotorLeftSpeed, 140);
+    analogWrite(MotorLeftSpeed, 148);
 
     digitalWrite(MotorRightDirection4A, LOW);
     digitalWrite(MotorRightDirection3A, HIGH);
@@ -67,8 +67,6 @@ void loop() {
     trackTime = millis();
     digitalWrite(ultrasonicSource, HIGH);
     runForward();
-    //runBackward();
-    //turnRight();
 
     digitalWrite(triggerPin, LOW);
     delayMicroseconds(2);
@@ -78,16 +76,13 @@ void loop() {
     duration = pulseIn(echoPin, HIGH);
     distance = duration * 0.034 / 2;
 
-//    Serial.print("Distance: ");
-//    Serial.println(distance);
-
-    if (distance < 4 && trackTime >= 1000) {
+    if (distance < 4 && trackTime >= 500) {
         // change the direction to backward.
         runBackward();
-        delay(400);
+        delay(300);
         // only turn the left wheel forward to turn right.
         turnRight();
-        delay(365);
+        delay(330);
         // turn all the wheel forward.
         runForward();
     }
