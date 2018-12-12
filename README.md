@@ -60,7 +60,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Authors
 
-* **[Yuheng Chang] (https://jonathan-uiuc.github.io/yuhengchang.github.io/)**
+* **[Yuheng Chang](https://jonathan-uiuc.github.io/yuhengchang.github.io/)**
 
 ## License
 
