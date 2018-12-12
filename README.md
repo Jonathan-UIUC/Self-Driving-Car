@@ -60,5 +60,9 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Authors
 
-* **Yuheng Chang**
+* **[Yuheng Chang] (https://jonathan-uiuc.github.io/yuhengchang.github.io/)**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
